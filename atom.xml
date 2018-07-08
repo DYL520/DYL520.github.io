@@ -5,9 +5,9 @@
   <subtitle>有生之年，只诉衷肠不言殇....</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://dyl520.github.io/"/>
   <updated>2018-07-08T13:52:57.899Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://dyl520.github.io/</id>
   
   <author>
     <name>DYL</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Linux基础</title>
-    <link href="http://yoursite.com/2016/08/10/Linux%E5%9F%BA%E7%A1%80/"/>
-    <id>http://yoursite.com/2016/08/10/Linux基础/</id>
+    <link href="https://dyl520.github.io/2016/08/10/Linux%E5%9F%BA%E7%A1%80/"/>
+    <id>https://dyl520.github.io/2016/08/10/Linux基础/</id>
     <published>2016-08-10T13:51:00.000Z</published>
     <updated>2018-07-08T13:52:57.899Z</updated>
     
@@ -32,17 +32,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://dyl520.github.io/categories/Linux/"/>
     
     
-      <category term="centos" scheme="http://yoursite.com/tags/centos/"/>
+      <category term="centos" scheme="https://dyl520.github.io/tags/centos/"/>
     
   </entry>
   
   <entry>
     <title>Samba环境搭建</title>
-    <link href="http://yoursite.com/2016/07/22/mba%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://yoursite.com/2016/07/22/mba环境搭建/</id>
+    <link href="https://dyl520.github.io/2016/07/22/mba%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>https://dyl520.github.io/2016/07/22/mba环境搭建/</id>
     <published>2016-07-22T13:54:00.000Z</published>
     <updated>2018-07-08T13:58:17.488Z</updated>
     
@@ -55,21 +55,21 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://dyl520.github.io/categories/Linux/"/>
     
     
-      <category term="centos" scheme="http://yoursite.com/tags/centos/"/>
+      <category term="centos" scheme="https://dyl520.github.io/tags/centos/"/>
     
-      <category term="samba" scheme="http://yoursite.com/tags/samba/"/>
+      <category term="samba" scheme="https://dyl520.github.io/tags/samba/"/>
     
-      <category term="linux与window文件共享" scheme="http://yoursite.com/tags/linux%E4%B8%8Ewindow%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/"/>
+      <category term="linux与window文件共享" scheme="https://dyl520.github.io/tags/linux%E4%B8%8Ewindow%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/"/>
     
   </entry>
   
   <entry>
     <title>ScrollView常用属性汇总</title>
-    <link href="http://yoursite.com/2015/03/08/Untitled/"/>
-    <id>http://yoursite.com/2015/03/08/Untitled/</id>
+    <link href="https://dyl520.github.io/2015/03/08/Untitled/"/>
+    <id>https://dyl520.github.io/2015/03/08/Untitled/</id>
     <published>2015-03-08T12:00:00.000Z</published>
     <updated>2018-07-08T12:21:16.175Z</updated>
     
@@ -81,17 +81,17 @@
     
     </summary>
     
-      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+      <category term="Android" scheme="https://dyl520.github.io/categories/Android/"/>
     
     
-      <category term="控件属性" scheme="http://yoursite.com/tags/%E6%8E%A7%E4%BB%B6%E5%B1%9E%E6%80%A7/"/>
+      <category term="控件属性" scheme="https://dyl520.github.io/tags/%E6%8E%A7%E4%BB%B6%E5%B1%9E%E6%80%A7/"/>
     
   </entry>
   
   <entry>
     <title>RelativeLayout属性</title>
-    <link href="http://yoursite.com/2015/03/01/RelativeLayout%E5%B1%9E%E6%80%A7/"/>
-    <id>http://yoursite.com/2015/03/01/RelativeLayout属性/</id>
+    <link href="https://dyl520.github.io/2015/03/01/RelativeLayout%E5%B1%9E%E6%80%A7/"/>
+    <id>https://dyl520.github.io/2015/03/01/RelativeLayout属性/</id>
     <published>2015-03-01T12:05:00.000Z</published>
     <updated>2018-07-08T13:50:20.582Z</updated>
     
@@ -103,17 +103,17 @@
     
     </summary>
     
-      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+      <category term="Android" scheme="https://dyl520.github.io/categories/Android/"/>
     
     
-      <category term="RelativeLayout" scheme="http://yoursite.com/tags/RelativeLayout/"/>
+      <category term="RelativeLayout" scheme="https://dyl520.github.io/tags/RelativeLayout/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2014/05/07/Hello-World/"/>
-    <id>http://yoursite.com/2014/05/07/Hello-World/</id>
+    <link href="https://dyl520.github.io/2014/05/07/Hello-World/"/>
+    <id>https://dyl520.github.io/2014/05/07/Hello-World/</id>
     <published>2014-05-07T14:32:00.000Z</published>
     <updated>2018-07-08T11:58:12.940Z</updated>
     
@@ -125,31 +125,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Android_蓝牙</title>
-    <link href="http://yoursite.com/2014/04/10/Android-%E8%93%9D%E7%89%99/"/>
-    <id>http://yoursite.com/2014/04/10/Android-蓝牙/</id>
-    <published>2014-04-10T13:02:00.000Z</published>
-    <updated>2018-07-08T13:10:29.832Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Android-BLE基本概念"><a href="#Android-BLE基本概念" class="headerlink" title="Android BLE基本概念"></a>Android BLE基本概念</h2><h5 id="A：设备角色"><a href="#A：设备角色" class="headerlink" title="A：设备角色"></a>A：设备角色</h5><pre><code>1、中心设备(Central)相对比较强大，用来连接外围设备。例如：手机2、外围设备(Periperal)一般是非常小或者简单的低功耗设备，用来提供数据，并且能够连接到      相对较为强大的中心设备。比如，小米手环说明: 理论上，一个蓝牙中心设备，可同时连接7个从设备 一个从设备只能连接一个主设备。 一旦从设备连接上主设备，就停止广播，断开则继续广播。在任何时候，只能一个设备在尝试建立连接！！</code></pre><h5 id="B：GATT"><a href="#B：GATT" class="headerlink" title="B：GATT"></a>B：GATT</h5><pre><code>GATT:    通用属性配置文件GATT定义了两个BLE设备通过Service和Characteristic通信的profile中心设备和外设唯一的通信方式就是建立GATT连接GATT通信的双方是C/S关系GATT连接时独占的Gatt Client ：gatt连接中发起请求的一端是客户端Gatt Server: gatt中响应请求的一端是服务端。。Server和Client角色没有绝对的关系，只是相对的</code></pre><p><img src="1.png" alt="logo"><br><img src="2.jpeg" alt="logo"><br><img src="3.jpeg" alt="logo"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Android-BLE基本概念&quot;&gt;&lt;a href=&quot;#Android-BLE基本概念&quot; class=&quot;headerlink&quot; title=&quot;Android BLE基本概念&quot;&gt;&lt;/a&gt;Android BLE基本概念&lt;/h2&gt;&lt;h5 id=&quot;A：设备角色&quot;&gt;&lt;a hr
-      
-    
-    </summary>
-    
-      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
-    
-    
-      <category term="蓝牙" scheme="http://yoursite.com/tags/%E8%93%9D%E7%89%99/"/>
     
   </entry>
   
