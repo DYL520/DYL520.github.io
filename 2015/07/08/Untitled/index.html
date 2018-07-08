@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="centos," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="虫子小孩" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="简述1991年，芬兰的一个研究生linus trovslds（李纳斯脱袜子）购买了自己的第一台电脑，并且决定开始开发自己的操作系统。这个想法非常的偶然，最初只是为了满足自己读写新闻和邮件的需求。他选择了minix作为自己的研究对象。而minix是一个开放的模型操作系统。最终取名为 linux（linus 的 minix），最终在全世界形成了巨大的回响。">
+<meta name="keywords" content="centos">
+<meta property="og:type" content="article">
+<meta property="og:title" content="centos">
+<meta property="og:url" content="http://yoursite.com/2015/07/08/Untitled/index.html">
+<meta property="og:site_name" content="虫子小孩">
+<meta property="og:description" content="简述1991年，芬兰的一个研究生linus trovslds（李纳斯脱袜子）购买了自己的第一台电脑，并且决定开始开发自己的操作系统。这个想法非常的偶然，最初只是为了满足自己读写新闻和邮件的需求。他选择了minix作为自己的研究对象。而minix是一个开放的模型操作系统。最终取名为 linux（linus 的 minix），最终在全世界形成了巨大的回响。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-07-08T03:11:27.112Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="centos">
+<meta name="twitter:description" content="简述1991年，芬兰的一个研究生linus trovslds（李纳斯脱袜子）购买了自己的第一台电脑，并且决定开始开发自己的操作系统。这个想法非常的偶然，最初只是为了满足自己读写新闻和邮件的需求。他选择了minix作为自己的研究对象。而minix是一个开放的模型操作系统。最终取名为 linux（linus 的 minix），最终在全世界形成了巨大的回响。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2015/07/08/Untitled/"/>
+
+
+
+
+
+  <title>centos | 虫子小孩</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">虫子小孩</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有生之年，只诉衷肠不言殇....</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/08/Untitled/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DYL">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/blogImg/dyl.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="虫子小孩">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">centos</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-08T11:08:00+08:00">
+                2015-07-08
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-07-08T11:11:27+08:00">
+                2018-07-08
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/07/08/Untitled/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2015/07/08/Untitled/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h1><p>1991年，芬兰的一个研究生linus trovslds（李纳斯脱袜子）购买了自己的第一台电脑，并且决定开始开发自己的操作系统。这个想法非常的偶然，最初只是为了满足自己读写新闻和邮件的需求。他选择了minix作为自己的研究对象。而minix是一个开放的模型操作系统。最终取名为 linux（linus 的 minix），最终在全世界形成了巨大的回响。<br><a id="more"></a><br>优点</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">1</span>、开源免费</span><br><span class="line"><span class="number">2</span>、多用户、多任务</span><br><span class="line"><span class="number">3</span>、良好的界面（图形化界面、字符界面）</span><br><span class="line">	Ubuntu、deepin(中国开发的)</span><br></pre></td></tr></table></figure>
+<p>版本号说明</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">输入指令查看   uname -r</span><br><span class="line"><span class="number">2.6</span><span class="number">.32</span><span class="number">-642.</span>el6.x86_64</span><br><span class="line">linux的内核版本分为两种：一种叫做开发版，一种是稳定版</span><br><span class="line"><span class="number">2</span>：内核主版本</span><br><span class="line"><span class="number">6</span>：奇数代表开发版，偶数代表稳定版，小版本号</span><br><span class="line"><span class="number">32</span>：该版本修复的次数</span><br></pre></td></tr></table></figure>
+<p>发行版本</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">常见的linux系统，只要是基于linux内核的系统都称之为linux的发行版本</span><br><span class="line">发行版本有很多，不同的发行版本基本指令都是一样的，软件安装方式不一样</span><br><span class="line">Debian（大便系列）</span><br><span class="line">Gentoo（贱兔系列）</span><br><span class="line">Ubuntu（乌班图），是大便系列的衍生版</span><br><span class="line">RedHat（红帽系列）</span><br><span class="line">CentOS  是红帽系列的发行版本</span><br></pre></td></tr></table></figure>
+<h1 id="安装系统"><a href="#安装系统" class="headerlink" title="安装系统"></a>安装系统</h1><p>首先在下载centos7.2之前，我们需要一个容器，我们使用VMware，我们使用破解版。</p>
+<p>vmware是收费的，但是我们使用的是破解版的。</p>
+<p>打开VMware</p>
+<p>点击创建虚拟机 -&gt; 选择自定义 -&gt; 下一步 -&gt; 稍后安装操作系统 -&gt; 点击Linux 选择CentOS 64位 -&gt; 名字自己取 位置自己选 -&gt; 处理器核心数量1核就够了 -&gt; 内存1024MB -&gt; 使用桥接网络 -&gt; 下一步 -&gt; 下一步 -&gt; 下一步 -&gt; 磁盘大小自己分配   将磁盘存储为单个文件 -&gt; 下一步 -&gt; 完成</p>
+<p>现在centOS的容器就创建完毕了</p>
+<p>右键选择容器的设置-&gt;找到CD/DVD-&gt;选择 使用ISO映像文件 然后找到.iso文件就可以了。</p>
+<p>然后就可以点击开机就可以安装了。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">开机以后直接选择install centos <span class="number">7</span></span><br><span class="line"></span><br><span class="line">test this media &amp; install centos <span class="number">7</span>是先测试镜像有误错误在安装</span><br><span class="line"></span><br><span class="line">Troubleshoopting 是用来测试内存和启动救援模式修复已经存在的centos。</span><br><span class="line"></span><br><span class="line">随后进入到了语言选择的界面：选择中文提示，点击<span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line">安装程序需要用户设置信息分为三个部分：本地化、软件和系统，完成这些配置可以继续安装</span><br><span class="line"></span><br><span class="line">时区 我们使用默认的 亚洲/上海 </span><br><span class="line">键盘 就是汉语</span><br><span class="line">语言 中文</span><br><span class="line"></span><br><span class="line">注意：即使是英文作为默认语言，也因该安装中文支持，否则一些中文文件无法正常的去显示。</span><br><span class="line"></span><br><span class="line">最小安装只安装系统最基本的组件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">安装位置：</span><br><span class="line">我们默认只有一个硬盘区域，我们在网络开启后，可以选择添加硬盘来增加额外的存储空间。</span><br><span class="line"></span><br><span class="line">最后在其它存储选项中，可以选择手动分区和系统是否加密。选择“我要配置分区”然后点击完成。</span><br><span class="line"></span><br><span class="line">这个时候会进入到手动分区的页面。</span><br><span class="line"></span><br><span class="line">点击下方的“+”添加分区</span><br><span class="line"></span><br><span class="line">第一项挂载点就是系统目录。第二项是期望容量，这里的默认单位是MB，你也可以写<span class="number">2</span>GB、<span class="number">100</span>MB。</span><br><span class="line"></span><br><span class="line">依次添加挂载点为“/boot”的引导分区，空间为<span class="number">1024</span>MB。</span><br><span class="line">载点为“swap”，分<span class="number">2</span>GB。</span><br><span class="line">最后一个挂载点“/”，不写默认把剩下的空间全部分配过去。</span><br><span class="line"></span><br><span class="line">然后点击完成 接受更改</span><br><span class="line"></span><br><span class="line">最后我们配置网络和主机名</span><br><span class="line"></span><br><span class="line">点击进去以后看到“eno16777736”的网卡是关闭状态的,将它打开</span><br><span class="line"></span><br><span class="line">在左下角看到“localhost.localdomain”，我将主机名改成我自己的名字</span><br><span class="line"></span><br><span class="line">如果网络还需要配置IP地址信息的，可以单点配置按钮，在弹出的窗口中选着“IPV4设置”，可以看到系统默认使用DHCP的方式自动回去IP地址。</span><br><span class="line"></span><br><span class="line">如果需要设置IP地址可以在方法中选择手动，然后添加相应的IP、子网掩码和网关。DNS服务器地址应该填写在“附加DNS服务区”选项中，如果有多个DNS需要使用逗号割开。点击完成。</span><br><span class="line"></span><br><span class="line">确认无误以后点击“开始安装”</span><br><span class="line"></span><br><span class="line">然后可以看见root密码。root用户通常称为根用户，在linux系统中拥有最高权限。root密码一般要设置安全级别高一些的。</span><br><span class="line"></span><br><span class="line">由于root用户的权限太高，分给每一个管理员的时候，可能会出现一些不必要的问题和麻烦。</span><br><span class="line"></span><br><span class="line">点击创建用户，输入用户名和密码，我们现在是学习阶段，可以分配管理员权限。一般不给管理员权限，必要的时候向root用户申请权限。</span><br><span class="line"></span><br><span class="line">安装完毕以后点击重启</span><br></pre></td></tr></table></figure>
+<h2 id="为什么使用CentOS7了？和6版本有什么不同"><a href="#为什么使用CentOS7了？和6版本有什么不同" class="headerlink" title="为什么使用CentOS7了？和6版本有什么不同"></a>为什么使用CentOS7了？和6版本有什么不同</h2><p>centos7与6之间最大的差别就是初始化技术的不同，==7采用的初始化技术是Systemd,并行的运行方式==，除了这一点之外，服务启动、开机启动文件、网络命令方面等等，都说6有所不同。让我们先来了解一下系统初始化技术的演变过程。</p>
+<h3 id="1-系统初始化技术"><a href="#1-系统初始化技术" class="headerlink" title="1.系统初始化技术"></a>1.系统初始化技术</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">Sysvinit技术</span><br><span class="line">Upstart技术</span><br><span class="line">Systemd技术</span><br><span class="line"></span><br><span class="line">Sysvinit技术</span><br><span class="line"></span><br><span class="line">特点：</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span>系统第<span class="number">1</span>个进程为init;</span><br><span class="line"><span class="number">2.</span>init进程是所有进程的父进程，不可kill；</span><br><span class="line"><span class="number">3.</span>大多数Linux发行版的init系统是和SystemV相兼容的，被称为sysvinit</span><br><span class="line"><span class="number">4.</span>代表系统：CentOS5 CentOS6</span><br><span class="line"></span><br><span class="line">优点：</span><br><span class="line"></span><br><span class="line">sysvinit运行非常良好，概念简单清晰。它主要依赖于shell脚本。</span><br><span class="line"></span><br><span class="line">缺点：</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span>按照一定顺序执行——&gt;启动太慢。</span><br><span class="line"><span class="number">2.</span>很容易hang住，fstab与nfs挂载问题</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Upstart技术</span><br><span class="line"></span><br><span class="line">CentOS6采用了upstart技术代替sysVinit进行引导，Upstart对rc.sysinit脚本做了大量的优化，缩短了系统初始化的启动时间。但是CentOS6为了简便管理员的操作，upstart的很多特性并没有凸显或直接不支持。</span><br></pre></td></tr></table></figure>
+<p>代表系统：CentOS6, Ubuntu14, 从CentOS7, Ubuntu15开始使用systemd</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Systemd技术</span><br><span class="line"></span><br><span class="line">新系统都会采用的技术（RedHat7,CentOS7,Ubuntu15等）；</span><br><span class="line">设计目标是克服sysvinit固有的缺点，提高系统的启动速度；</span><br><span class="line">和Sysvinit兼容，降低迁移成本；</span><br><span class="line">最主要优点：并行启动</span><br><span class="line">Pid为<span class="number">1</span>的进程</span><br></pre></td></tr></table></figure>
+<h3 id="2-在yum源上的优化"><a href="#2-在yum源上的优化" class="headerlink" title="2.在yum源上的优化"></a>2.在yum源上的优化</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在centos6的时候，默认是从官方源下载rpm包的，由于是国外的yum源很慢不能用，CentOS7在这里做了优化，当我们使用yum安装软件的时候，默认不会再从官方下载，而是自动寻找离自己地理位置最近的yum源开始下载。</span><br></pre></td></tr></table></figure>
+<h3 id="3-命令"><a href="#3-命令" class="headerlink" title="3.命令"></a>3.命令</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">如果在安装系统的时候选择minimal，会比之前<span class="number">6</span>的时候以更小的包来安装，比如：vim、ifconfig、route、setup、netstat等等很多命令都没有了。。在安装系统后可加入以下软件包：</span><br><span class="line"></span><br><span class="line">yum install lrzsz tree net-tools nmap vim bash-completion lsof dos2unix nc telnet ntp wget rng-tools psmisc screen -y</span><br></pre></td></tr></table></figure>
+<p>比如ifconfig是查看网卡信息的，centos7中没有，那么我们使用</p>
+<p>​    yum安装<code>net-tools</code>来提供一些网络的命令。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">bash-completion 自动命令补全的工具</span><br><span class="line"></span><br><span class="line">psmisc 这个包含有killall命令。</span><br><span class="line"> </span><br><span class="line">screen 可以新建一个窗口，把任务放在后台运行。</span><br><span class="line"></span><br><span class="line">rng-tools   生成随机数嫡池的一个工具，有了这个工具tomcat 启动会变得非常快</span><br><span class="line"></span><br><span class="line">lrzsz 支持windowns平台的上传下载linux。在windowns远程连接工具上可以使用。</span><br></pre></td></tr></table></figure>
+<h3 id="4-字符集修改"><a href="#4-字符集修改" class="headerlink" title="4.字符集修改"></a>4.字符集修改</h3><p>centos6的时候修改字符集：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/locale.conf  <span class="comment">#字符集配置文件</span></span><br><span class="line">localectl set-locale LANG=zh_CN.UTF<span class="number">-8</span></span><br></pre></td></tr></table></figure>
+<p>而centos7只需要一行命令搞定</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">localectl set-locale LANG=zh_CN.UTF<span class="number">-8</span></span><br><span class="line"></span><br><span class="line">localectl status</span><br></pre></td></tr></table></figure>
+<h3 id="5-开机启动管理"><a href="#5-开机启动管理" class="headerlink" title="5.开机启动管理"></a>5.开机启动管理</h3><p>centos6依靠<code>/etc/rc.local</code>对开机启动进行管理的，但是这个文件的权限是开放的。</p>
+<p>而centos7</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/etc/rc.local  <span class="comment"># 这个文件还是存在，不过如果我们还想继续使用这种方式需要给它加执行权限chmod +x /etc/rc.d/rc.local</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># system一统天下 snapshot(支持快照)</span></span><br><span class="line"></span><br><span class="line">systemctl status cron.service <span class="comment">#查看定时任务状态</span></span><br><span class="line">systemctl stop cron.service   <span class="comment">#关闭定时任务</span></span><br><span class="line">systemctl status cron.service  <span class="comment">#查看操作情况</span></span><br><span class="line">systemctl  list-unit-files|grep enable  <span class="comment">#查看当前正在运行的服务</span></span><br><span class="line">systemctl   disable postfix.service <span class="comment">#关闭邮件服务</span></span><br><span class="line">systemctl  list-unit-files|grep postfix <span class="comment">#查看邮件服务是否开启</span></span><br><span class="line">systemctl stop firewalld.service <span class="comment">#关闭防火墙</span></span><br><span class="line">systemctl  <span class="keyword">is</span>-enable <span class="comment">#开启的服务 </span></span><br><span class="line">systemctl  disable   <span class="comment">#关闭的服务</span></span><br></pre></td></tr></table></figure>
+<p>centos7 通过/etc/rc.d/rc.local/开机自启动</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">centos7中/etc/rc.d/rc.local需要执行如下命令赋予可执行权限</span><br><span class="line">chmod +x /etc/rc.d/rc.local</span><br></pre></td></tr></table></figure>
+<h3 id="6-运行级别runlevel"><a href="#6-运行级别runlevel" class="headerlink" title="6.运行级别runlevel"></a>6.运行级别runlevel</h3><p>centos6   “/etc/inittab” 在centos7中是无效的。</p>
+<p>centos7  system target 替代 了inittab</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##永久生效下次登录生效</span></span><br><span class="line">systemctl get-default graphical.target 切换到<span class="number">5</span></span><br><span class="line">systemctl get-default multi-user.target 切换到<span class="number">3</span></span><br><span class="line"><span class="comment">##临时生效的话 </span></span><br><span class="line">init3</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#查看运行级别</span></span><br><span class="line">ls -lh /usr/lib/systemd/system/runlevel*.target</span><br></pre></td></tr></table></figure>
+<p>运行级别（Runlevel）指的是Unix或者Linux等类Unix操作系统下不同的运行模式。运行级别通常分为7等，分别是从0到6，但如果必要的话也可以更多。</p>
+<p>例如在大多数linux操作系统下一共有如下6个典型的运行级别：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span> 停机</span><br><span class="line"><span class="number">1</span> 单用户，Does <span class="keyword">not</span> configure network interfaces, start daemons, <span class="keyword">or</span> allow non-root logins</span><br><span class="line"><span class="number">2</span> 多用户，无网络连接 Does <span class="keyword">not</span> configure network interfaces <span class="keyword">or</span> start daemons</span><br><span class="line"><span class="number">3</span> 多用户，启动网络连接 Starts the system normally.</span><br><span class="line"><span class="number">4</span> 用户自定义</span><br><span class="line"><span class="number">5</span> 多用户带图形界面</span><br><span class="line"><span class="number">6</span> 重启</span><br></pre></td></tr></table></figure>
+<h2 id="ssh进行访问"><a href="#ssh进行访问" class="headerlink" title="ssh进行访问"></a>ssh进行访问</h2><p>windows下安装xshell来进行可以远程访问。</p>
+<p>而mac 是用ssh命令 </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh 用户名@ip地址:端口号</span><br><span class="line"></span><br><span class="line">默认的端口号<span class="number">22</span>可以不写</span><br><span class="line">ssh root@<span class="number">172.11</span><span class="number">.11</span><span class="number">.96</span></span><br></pre></td></tr></table></figure>
+<p>首先我们先下载‘net-tools’，这样可以使用ifconfig查看网卡信息，它的作用和DOS命令ipconfig一样。</p>
+<p>下载完成以后输入：ifconfig</p>
+<p>然后可以找到你的ip地址</p>
+<p>如果ssh链接被拒绝：</p>
+<p>1.验证openssh-server<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">首先，要确保CentOS7安装了  openssh-server，在终端中输入</span><br><span class="line"></span><br><span class="line">yum list installed | grep openssh-server</span><br><span class="line"></span><br><span class="line">如果出现了结果那么表示已经安装</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">没有安装输入</span><br><span class="line"></span><br><span class="line">yum install openssh-server -y</span><br></pre></td></tr></table></figure></p>
+<p>2.配置你的ssh文件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">找到了  /etc/ssh/  目录下的sshd服务配置文件 sshd_config，用Vim编辑器打开</span><br><span class="line"></span><br><span class="line">如果没有vim编辑器那么执行：</span><br><span class="line"></span><br><span class="line">yum install vim -y</span><br><span class="line"></span><br><span class="line">vim编辑器比vi编辑器增加了颜色识别</span><br><span class="line"></span><br><span class="line">vim /etc/ssh/sshd_config</span><br><span class="line"></span><br><span class="line">直接输入/Port </span><br><span class="line"></span><br><span class="line">可以看见：</span><br><span class="line">================</span><br><span class="line"><span class="number">1.</span>将文件中，关于监听端口、监听地址前的 <span class="comment"># 号去除</span></span><br><span class="line"></span><br><span class="line">Port <span class="number">22</span></span><br><span class="line"><span class="comment">#AddressFamily any</span></span><br><span class="line">ListenAddress <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span> <span class="comment">#任意地址</span></span><br><span class="line">ListenAddress ::</span><br><span class="line">================</span><br><span class="line">去上面<span class="number">3</span>行的注释</span><br><span class="line"></span><br><span class="line">要想编辑的话需要按键盘i，代表insert，取消输入按esc</span><br><span class="line"></span><br><span class="line">================</span><br><span class="line"><span class="number">2.</span>然后开启允许远程登录</span><br><span class="line">PermitRootLogin yes</span><br><span class="line">================</span><br><span class="line"></span><br><span class="line">================</span><br><span class="line"><span class="number">3.</span>开启使用用户名密码来作为连接验证</span><br><span class="line">PasswordAuthentication yes</span><br><span class="line">================</span><br><span class="line"></span><br><span class="line">最后保证在取消输入的状态下</span><br><span class="line">输入</span><br><span class="line">================</span><br><span class="line">：wq! </span><br><span class="line">================</span><br><span class="line">代表强制保存退出</span><br><span class="line"></span><br><span class="line">配置完成后需要重新启动一下sshd服务</span><br><span class="line"></span><br><span class="line">开启  sshd  服务，输入 sudo service sshd start</span><br><span class="line">检查  sshd  服务是否已经开启，输入ps -e | grep sshd</span><br><span class="line">或者输入netstat -an | grep <span class="number">22</span>  检查  <span class="number">22</span> 号端口是否开启监听</span><br></pre></td></tr></table></figure>
+<p>##简单操作</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">ifconfig    查看ip地址</span><br><span class="line">		ping  ip地址     用来测试网络是否联通</span><br><span class="line">			通过ctrl + c 来停止这个进程</span><br><span class="line">		ls </span><br><span class="line">			显示当前文件夹（目录）下面的所有文件</span><br><span class="line">		pwd</span><br><span class="line">			显示当前目录的路径</span><br><span class="line">			根目录   /</span><br><span class="line">		cd   目录的路径</span><br><span class="line">			切换到指定目录</span><br><span class="line">		绝对路径、相对路径</span><br><span class="line">			绝对路径：相对于根目录的路径</span><br><span class="line">			相对路径：相对于当前目录的路径</span><br><span class="line">			.       : 代表的就是当前目录</span><br><span class="line">			..      ：代表的就是上一级目录</span><br><span class="line">			cd      : 直接来到家目录下面</span><br><span class="line">			cd -    : 回到之前的目录（回看）</span><br><span class="line">		[root@localhost /]<span class="comment">#</span></span><br><span class="line">			root：当前用户名</span><br><span class="line">			localhost：主机名</span><br><span class="line">			/：   当前所在目录</span><br><span class="line">			<span class="comment">#：   代表超级管理员在执行指令</span></span><br><span class="line">			$:    代表普通管理员在执行指令</span><br><span class="line">		拍快照（恢复到快照）</span><br><span class="line">			纯净水系统</span><br><span class="line">		tab键（自动补全）</span><br><span class="line">			指令和路径都可以自动补全</span><br><span class="line">			</span><br><span class="line">		clear 清理屏幕·</span><br><span class="line">	目录：</span><br><span class="line">			/：根目录</span><br><span class="line">		~	: 家目录（就是你可以肆意妄为的地方）</span><br><span class="line">			linux每一个用户都有一个家目录，那意思就是说你这个用户在你的家目录下面拥有至高无上的权限</span><br><span class="line">			root的家目录就在   /root</span><br><span class="line">			普通用户的家目录在   /home/ruidong   </span><br><span class="line">		. 	：当前目录</span><br><span class="line">		..  ：上一级目录    cd ../../（上一级的上一级）</span><br></pre></td></tr></table></figure>
+<p>##指令</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">关机：poweroff   halt   </span><br><span class="line">		shutdown  now</span><br><span class="line">		shutdown -h +<span class="number">5</span>   <span class="string">'woyaoguanjile'</span>    <span class="number">5</span>分钟之后关机</span><br><span class="line">		shutdown -h <span class="number">16</span>:<span class="number">10</span>    下午<span class="number">4</span>点<span class="number">10</span>分关机</span><br><span class="line">	重启：reboot   </span><br><span class="line">		shutdown -r now</span><br><span class="line">	date</span><br><span class="line">		查看当前时间日期</span><br><span class="line">	cal</span><br><span class="line">		查看当月日历</span><br><span class="line">		cal <span class="number">8</span> <span class="number">2017</span>   查看<span class="number">2017</span>年<span class="number">8</span>月的日历</span><br><span class="line">		cal <span class="number">2017</span>     查看<span class="number">2017</span>年所有的日历</span><br><span class="line">	上下方向按键</span><br><span class="line">		快速的调出历史指令</span><br></pre></td></tr></table></figure>
+<h4 id="防火墙管理"><a href="#防火墙管理" class="headerlink" title="防火墙管理"></a>防火墙管理</h4><p><a href="https://blog.csdn.net/achang21/article/details/52538049" target="_blank" rel="noopener">https://blog.csdn.net/achang21/article/details/52538049</a></p>
+<h4 id="centos安装vm-tools"><a href="#centos安装vm-tools" class="headerlink" title="centos安装vm-tools"></a>centos安装vm-tools</h4><p><a href="https://www.linuxidc.com/Linux/2017-05/143323.htm" target="_blank" rel="noopener">https://www.linuxidc.com/Linux/2017-05/143323.htm</a></p>
+<p>命令：</p>
+<p> sudo netstat -apn | grep 80  ## 查看端口是否有服务</p>
+
+      
+    </div>
+    
+    
+    
+	<div>
+	
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+	
+	</div>
+	
+	
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/assets/pay/alipay.jpg" alt="DYL 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/centos/" <i class="fa fa-tag"></i> centos</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/07/07/Hello-World/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/assets/blogImg/dyl.jpg"
+                alt="DYL" />
+            
+              <p class="site-author-name" itemprop="name">DYL</p>
+              <p class="site-description motion-element" itemprop="description">江西理工 Android、python、单片机码农....</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/DYL520" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="1016068291@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://home.cnblogs.com/u/dyl01/" target="_blank" title="博客园">
+                      
+                        <i class="fa fa-fw fa-book"></i>博客园</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://stackoverflow.com/users/9867546/dyl" target="_blank" title="StackOverflow">
+                      
+                        <i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简述"><span class="nav-number">1.</span> <span class="nav-text">简述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装系统"><span class="nav-number">2.</span> <span class="nav-text">安装系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么使用CentOS7了？和6版本有什么不同"><span class="nav-number">2.1.</span> <span class="nav-text">为什么使用CentOS7了？和6版本有什么不同</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-系统初始化技术"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.系统初始化技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-在yum源上的优化"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.在yum源上的优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-命令"><span class="nav-number">2.1.3.</span> <span class="nav-text">3.命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-字符集修改"><span class="nav-number">2.1.4.</span> <span class="nav-text">4.字符集修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-开机启动管理"><span class="nav-number">2.1.5.</span> <span class="nav-text">5.开机启动管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-运行级别runlevel"><span class="nav-number">2.1.6.</span> <span class="nav-text">6.运行级别runlevel</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ssh进行访问"><span class="nav-number">2.2.</span> <span class="nav-text">ssh进行访问</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#防火墙管理"><span class="nav-number">2.2.0.1.</span> <span class="nav-text">防火墙管理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#centos安装vm-tools"><span class="nav-number">2.2.0.2.</span> <span class="nav-text">centos安装vm-tools</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("02/14/2014 12:49:00");//此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+
+<div class="copyright">&copy; 2014 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">DYL</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'manual') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+</body>
+</html>
