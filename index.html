@@ -92,7 +92,7 @@
 <meta name="keywords" content="python,Android,web">
 <meta property="og:type" content="website">
 <meta property="og:title" content="虫子小孩">
-<meta property="og:url" content="https://dyl520.github.io/index.html">
+<meta property="og:url" content="https://dyl521.github.io/index.html">
 <meta property="og:site_name" content="虫子小孩">
 <meta property="og:description" content="江西理工 Android、python、单片机码农....">
 <meta property="og:locale" content="zh-Hans">
@@ -128,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="https://dyl520.github.io/"/>
+  <link rel="canonical" href="https://dyl521.github.io/"/>
 
 
 
@@ -202,6 +202,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
           </a>
         </li>
       
@@ -292,7 +302,313 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://dyl520.github.io/2016/08/10/Linux基础/">
+    <link itemprop="mainEntityOfPage" href="https://dyl521.github.io/2016/08/15/thon中其他内置方法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DYL">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/blogImg/dyl.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="虫子小孩">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/08/15/thon中其他内置方法/" itemprop="url">python中其他内置方法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-15T13:07:00+08:00">
+                2016-08-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>1、抽象方法<br>　　抽象方法一般只用定义，不用实现；包含抽象方法的类不能直接创建对象，（包含抽象方法的称为抽象类）<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 抽象类必须导入的模块</span></span><br><span class="line"><span class="keyword">from</span> abc <span class="keyword">import</span> ABC,abstractmethod</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Stuent</span><span class="params">(ABC)</span>:</span></span><br><span class="line">     <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span> </span><br><span class="line"><span class="meta">    @abstractmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">abstractMathod</span><span class="params">(self)</span>:</span></span><br><span class="line">      <span class="string">'''1、这是一个抽象方法，一般不写内容，只定义，不实现，由子类去实现</span></span><br><span class="line"><span class="string">        2、这个类包含抽象方法，就是抽象类，不能用来实例化对象     '''</span></span><br><span class="line"> <span class="comment"># ss = Stduent()  ##包含抽象方法的类，称为抽象类，不能直接实例化对象！！</span></span><br><span class="line"> <span class="comment">## 只能写个类，继承它，子类就能实例化对象</span></span><br><span class="line"> </span><br><span class="line"> <span class="class"><span class="keyword">class</span> <span class="title">ManStudent</span><span class="params">(Stduent)</span>:</span> </span><br><span class="line">     <span class="function"><span class="keyword">def</span> <span class="title">abstractMathod</span><span class="params">(self)</span>:</span>  <span class="comment">##抽象方法，重写</span></span><br><span class="line">         print(<span class="string">'abstractMathod'</span>) </span><br><span class="line"> ms = ManStudent()  <span class="comment">##重写父类方法后，就可以用子类实例化对象</span></span><br><span class="line"> ms.abstractMathod()</span><br></pre></td></tr></table></figure></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/08/15/thon中其他内置方法/#更多" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+	<div>
+	
+	</div>
+	<div>
+      
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dyl521.github.io/2016/08/12/python中的进程线程协程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DYL">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/blogImg/dyl.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="虫子小孩">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/08/12/python中的进程线程协程/" itemprop="url">python中的进程线程协程</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-12T12:37:00+08:00">
+                2016-08-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><a href="https://www.cnblogs.com/zhang-can/p/7215506.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhang-can/p/7215506.html</a><br><a href="http://cenalulu.github.io/python/gil-in-python/" target="_blank" rel="noopener">http://cenalulu.github.io/python/gil-in-python/</a></p>
+<p>1、啥是进程？<br>　　进程是计算机中程序关于数据集合的一次活动，是操作系统进行资源分配和调度的基本单位</p>
+<p>　　进程也可以描述是一个程序在一个数据就上一次动态执行过程。<br>　　进程的调度是由操作系统决定的！<br>　　在一台计算机上，可以打开的进程是有限的，不能过多，否则操作系统业务无法进行调度！！<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/08/12/python中的进程线程协程/#更多" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+	<div>
+	
+	</div>
+	<div>
+      
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dyl521.github.io/2016/08/10/Linux基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DYL">
@@ -445,7 +761,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://dyl520.github.io/2016/07/22/mba环境搭建/">
+    <link itemprop="mainEntityOfPage" href="https://dyl521.github.io/2016/07/22/mba环境搭建/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DYL">
@@ -598,7 +914,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://dyl520.github.io/2015/03/08/Untitled/">
+    <link itemprop="mainEntityOfPage" href="https://dyl521.github.io/2015/03/08/Untitled/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DYL">
@@ -750,7 +1066,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://dyl520.github.io/2015/03/01/RelativeLayout属性/">
+    <link itemprop="mainEntityOfPage" href="https://dyl521.github.io/2015/03/01/RelativeLayout属性/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DYL">
@@ -902,7 +1218,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://dyl520.github.io/2014/05/07/Hello-World/">
+    <link itemprop="mainEntityOfPage" href="https://dyl521.github.io/2014/05/07/Hello-World/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DYL">
@@ -1069,7 +1385,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1080,7 +1396,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1091,7 +1407,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
