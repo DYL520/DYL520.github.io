@@ -6,10 +6,10 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -27,8 +27,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -47,7 +47,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -55,9 +55,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
@@ -75,31 +75,29 @@
 
 
 
-  <meta name="keywords" content="服务器," />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="虫子小孩" type="application/atom+xml" />
+  <meta name="keywords" content="服务器,">
 
 
 
 
 
 
-<meta name="description" content="1、nginxnginx是一个基于C语言开发的高并发http及反向代理服务器，官方 测试能够达到5W并发连接，与传统的基于多进程多线程的Apache等服务器完全不同，nginx处理请求是异步非阻塞的，得益于epoll等高效的网络模型。 2、为啥是openResty优势？直接使用nginx开发，必须得实现nginx源码和C语言开发，openResty整合了Nginx和lua语言，我们使用lua帮我们">
+
+
+
+
+<meta name="description" content="1、nginxnginx是一个基于C语言开发的高并发http及反向代理服务器，官方 测试能够达到5W并发连接，与传统的基于多进程多线程的Apache等服务器完全不同，nginx处理请求是异步非阻塞的，得益于epoll等高效的网络模型。 ​    理由1：当用户量比较少的时候，用户可以直接访问web服务器，当用户量增加的时候，为了解决并发的问题，就使用负载均衡，就是多增web服务器，图片等静态资源文">
 <meta name="keywords" content="服务器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OpenResty详解">
 <meta property="og:url" content="https://dyl521.github.io/2017/07/11/enResty详解/index.html">
 <meta property="og:site_name" content="虫子小孩">
-<meta property="og:description" content="1、nginxnginx是一个基于C语言开发的高并发http及反向代理服务器，官方 测试能够达到5W并发连接，与传统的基于多进程多线程的Apache等服务器完全不同，nginx处理请求是异步非阻塞的，得益于epoll等高效的网络模型。 2、为啥是openResty优势？直接使用nginx开发，必须得实现nginx源码和C语言开发，openResty整合了Nginx和lua语言，我们使用lua帮我们">
+<meta property="og:description" content="1、nginxnginx是一个基于C语言开发的高并发http及反向代理服务器，官方 测试能够达到5W并发连接，与传统的基于多进程多线程的Apache等服务器完全不同，nginx处理请求是异步非阻塞的，得益于epoll等高效的网络模型。 ​    理由1：当用户量比较少的时候，用户可以直接访问web服务器，当用户量增加的时候，为了解决并发的问题，就使用负载均衡，就是多增web服务器，图片等静态资源文">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-12T15:06:00.925Z">
+<meta property="og:updated_time" content="2018-07-13T15:07:10.540Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OpenResty详解">
-<meta name="twitter:description" content="1、nginxnginx是一个基于C语言开发的高并发http及反向代理服务器，官方 测试能够达到5W并发连接，与传统的基于多进程多线程的Apache等服务器完全不同，nginx处理请求是异步非阻塞的，得益于epoll等高效的网络模型。 2、为啥是openResty优势？直接使用nginx开发，必须得实现nginx源码和C语言开发，openResty整合了Nginx和lua语言，我们使用lua帮我们">
+<meta name="twitter:description" content="1、nginxnginx是一个基于C语言开发的高并发http及反向代理服务器，官方 测试能够达到5W并发连接，与传统的基于多进程多线程的Apache等服务器完全不同，nginx处理请求是异步非阻塞的，得益于epoll等高效的网络模型。 ​    理由1：当用户量比较少的时候，用户可以直接访问web服务器，当用户量增加的时候，为了解决并发的问题，就使用负载均衡，就是多增web服务器，图片等静态资源文">
 
 
 
@@ -129,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="https://dyl521.github.io/2017/07/11/enResty详解/"/>
+  <link rel="canonical" href="https://dyl521.github.io/2017/07/11/enResty详解/">
 
 
 
@@ -148,12 +146,12 @@
 </head>
 
 
-   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
    <script type="text/javascript" src="/js/src/fireworks.js"></script>
 
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -163,13 +161,13 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta custom-logo">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">虫子小孩</span>
         <span class="logo-line-after"><i></i></span>
@@ -199,7 +197,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -209,7 +207,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -219,7 +217,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -232,7 +230,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
             搜索
           </a>
@@ -253,9 +251,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -287,20 +283,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://dyl521.github.io/2017/07/11/enResty详解/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DYL">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/assets/blogImg/dyl.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="虫子小孩">
     </span>
 
@@ -332,7 +328,7 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -343,7 +339,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/openresty/" itemprop="url" rel="index">
                     <span itemprop="name">openresty</span>
                   </a>
@@ -382,9 +378,19 @@
 
       
         <h3 id="1、nginx"><a href="#1、nginx" class="headerlink" title="1、nginx"></a>1、nginx</h3><pre><code>nginx是一个基于C语言开发的高并发http及反向代理服务器，官方 测试能够达到5W并发连接，与传统的基于多进程多线程的Apache等服务器完全不同，nginx处理请求是异步非阻塞的，得益于epoll等高效的网络模型。
-</code></pre><h3 id="2、为啥是openResty优势？"><a href="#2、为啥是openResty优势？" class="headerlink" title="2、为啥是openResty优势？"></a>2、为啥是openResty优势？</h3><pre><code>直接使用nginx开发，必须得实现nginx源码和C语言开发，openResty整合了Nginx和lua语言，我们使用lua帮我们实现各种业务。它的核心是nginx和其他第三方模块组成，包括mysql、redis、memcached等。京东实时价格、秒杀、动态服务等都是使用openresty
-</code></pre><h3 id="3、OpenResty运行原理"><a href="#3、OpenResty运行原理" class="headerlink" title="3、OpenResty运行原理"></a>3、OpenResty运行原理</h3><pre><code>Nginx采master-worker模型，一个master进程管理多个worker进程，master负责全局初始化，以及多worker的管理。在openresty，每个worker使用一个LuaVM，当请求本分配到worker时，将LuaVM里创建协程，协程之间数据隔离，每个协程具有独立的全局变量_G
-</code></pre>
+</code></pre><p>​    理由1：当用户量比较少的时候，用户可以直接访问web服务器，当用户量增加的时候，为了解决并发的问题，就使用负载均衡，就是多增web服务器，图片等静态资源文件，存放在负载均衡服务器上,这样节省很多的资源– 或者做单独的图片服务器</p>
+<p>​    理由2：nginx做反向代理，真实运行服务器，不对外暴露，nginx根据配置的策略（轮询、url_hash、权重、fair）来实现任务到的分配，实现负载均衡 – 硬件f5,太贵不适合中小型公司</p>
+<h3 id="2、为啥是openResty优势？"><a href="#2、为啥是openResty优势？" class="headerlink" title="2、为啥是openResty优势？"></a>2、为啥是openResty优势？</h3><p>直接使用nginx开发，必须得实现nginx源码和C语言开发，openResty整合了Nginx和lua语言，我们使用lua帮我们实现各种业务。它的核心是nginx和其他第三方模块组成，包括mysql、redis、memcached等。京东实时价格、秒杀、动态服务等都是使用openresty</p>
+<h3 id="3、OpenResty运行原理"><a href="#3、OpenResty运行原理" class="headerlink" title="3、OpenResty运行原理"></a>3、OpenResty运行原理</h3><p>Nginx采master-worker模型，一个master进程管理多个worker进程，master负责全局初始化，以及多worker的管理。在openresty，每个worker使用一个LuaVM，当请求本分配到worker时，将LuaVM里创建协程，协程之间数据隔离，每个协程具有独立的全局变量_G</p>
+<h3 id="4、nginx配置文件组成部分"><a href="#4、nginx配置文件组成部分" class="headerlink" title="4、nginx配置文件组成部分"></a>4、nginx配置文件组成部分</h3><ul>
+<li>main(全局设置)</li>
+<li>events(nginx工作模式)</li>
+<li>http(http设置)</li>
+<li>sever(主机设置)</li>
+<li>location(URL匹配)</li>
+<li>upstream(负载均衡服务器设置)</li>
+</ul>
+
       
     </div>
     
@@ -421,7 +427,7 @@
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/assets/pay/alipay.jpg" alt="DYL 支付宝"/>
+        <img id="alipay_qr" src="/assets/pay/alipay.jpg" alt="DYL 支付宝">
         <p>支付宝</p>
       </div>
     
@@ -458,7 +464,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/服务器/" <i class="fa fa-tag"></i> 服务器</a>
+            <a href="/tags/服务器/" <i="" class="fa fa-tag"> 服务器</a>
           
         </div>
       
@@ -471,8 +477,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/11/django项目部署/" rel="next" title="django项目部署">
-                <i class="fa fa-chevron-left"></i> django项目部署
+              <a href="/2017/05/11/ysql入门/" rel="next" title="mysql入门">
+                <i class="fa fa-chevron-left"></i> mysql入门
               </a>
             
           </div>
@@ -480,6 +486,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/17/Ajax简要运用/" rel="prev" title="Ajax简要运用">
+                Ajax简要运用 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -543,11 +553,9 @@
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/assets/blogImg/dyl.jpg"
-                alt="DYL" />
+              <img class="site-author-image" itemprop="image" src="/assets/blogImg/dyl.jpg" alt="DYL">
             
               <p class="site-author-name" itemprop="name">DYL</p>
               <p class="site-description motion-element" itemprop="description">江西理工 Android、python、单片机码农....</p>
@@ -560,7 +568,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -571,7 +579,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -590,13 +598,6 @@
 
           </nav>
 
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
           
 
           
@@ -650,7 +651,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、nginx"><span class="nav-number">1.</span> <span class="nav-text">1、nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、为啥是openResty优势？"><span class="nav-number">2.</span> <span class="nav-text">2、为啥是openResty优势？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、OpenResty运行原理"><span class="nav-number">3.</span> <span class="nav-text">3、OpenResty运行原理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、nginx"><span class="nav-number">1.</span> <span class="nav-text">1、nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、为啥是openResty优势？"><span class="nav-number">2.</span> <span class="nav-text">2、为啥是openResty优势？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、OpenResty运行原理"><span class="nav-number">3.</span> <span class="nav-text">3、OpenResty运行原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、nginx配置文件组成部分"><span class="nav-number">4.</span> <span class="nav-text">4、nginx配置文件组成部分</span></a></li></ol></div>
             
 
           </div>
@@ -688,7 +689,7 @@
 setInterval("createtime()",250);
 </script>
 
-<div class="copyright">&copy; 2014 &mdash; <span itemprop="copyrightYear">2018</span>
+<div class="copyright">&copy; 2014 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
